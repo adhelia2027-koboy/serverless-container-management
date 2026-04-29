@@ -1,0 +1,23 @@
+# Environment files
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environments
+venv/
+.venv/
+
+# Build/package files
+*.zip
+
+# Local source clone / embedded git repository
+todo-source/
+
+# Typo / temporary response files
+*.jso
+
+# OS files
+.DS_Store
+Thumbs.db

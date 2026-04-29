@@ -1,0 +1,16 @@
+ 
+services:
+  todo:
+    container_name: ${DOCKERHUB_USERNAME}-todo-task
+    image: ${DOCKERHUB_USERNAME}/item-todo:latest
+    ports:
+      - "7000:5000"
+    volumes:
+      - ./todo-app/todos.json:/app/todos.json
+    networks:
+      - skola-net
+ 
+networks:
+  skola-net:
+    name: skola-net
+    driver: bridge
